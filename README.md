@@ -35,10 +35,6 @@ The goal of this project was to simulate how financial institutions assess defau
 
 ---
 
-Windows: .venv\Scripts\activate
-2. Install dependencies: pip install -r requirements.txt
-3. Train the model: python src/train.py
-4. Run the API: uvicorn src.api:app --reload
 
 ### Sample Input:
 ```json
@@ -55,6 +51,4 @@ Windows: .venv\Scripts\activate
   "default_probability": 0.1234
 }
 
-## How to Run
 
-1. Create and activate virtual environment:
