@@ -49,7 +49,7 @@ The goal of this project was to simulate how financial institutions assess defau
 
 ---
 
-### Sample Onput:
+### Sample Output:
 {
   "default_probability": 0.1234
 }
