@@ -1,10 +1,60 @@
+# Credit Risk Mini Model (Python + FastAPI)
 
+## Overview
+This project demonstrates a credit risk prediction system using a logistic regression model trained on synthetic loan data and deployed through a FastAPI endpoint.
 
-Tiny demo: train a logistic regression on synthetic loan data and serve predictions with FastAPI.
+The goal of this project was to simulate how financial institutions assess default risk and expose model predictions through an API for real-time usage.
 
+---
 
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-python src/train.py
-uvicorn src.api:app --reload
+## Key Features
+- Logistic regression model for default probability prediction
+- Synthetic data generation for loan risk simulation
+- REST API using FastAPI for real-time predictions
+- Model serialization using `joblib`
+- Input validation using Pydantic schemas
 
+---
+
+## Technologies Used
+- Python
+- NumPy & Pandas
+- Scikit-learn (Logistic Regression, Pipeline, Scaling)
+- FastAPI
+- Pydantic
+- Joblib
+
+---
+
+## What I Learned
+- How to build and train a machine learning model for classification
+- How to structure a data pipeline using preprocessing + modeling
+- How to evaluate model performance using ROC-AUC
+- How to deploy a model via an API using FastAPI
+- How backend systems serve ML predictions in real-world applications
+
+---
+
+Windows: .venv\Scripts\activate
+2. Install dependencies: pip install -r requirements.txt
+3. Train the model: python src/train.py
+4. Run the API: uvicorn src.api:app --reload
+
+### Sample Input:
+```json
+{
+  "loan_amnt": 15000,
+  "term_months": 36,
+  "int_rate": 12.5,
+  "fico": 700,
+  "dti": 18,
+  "annual_inc": 65000
+}
+
+{
+  "default_probability": 0.1234
+}
+
+## How to Run
+
+1. Create and activate virtual environment:
