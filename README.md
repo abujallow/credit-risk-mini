@@ -47,6 +47,9 @@ The goal of this project was to simulate how financial institutions assess defau
   "annual_inc": 65000
 }
 
+---
+
+### Sample Onput:
 {
   "default_probability": 0.1234
 }
